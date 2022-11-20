@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "banking"
+version = "0.1.0"
+description = ""
+authors = ["Tory Clasen <toryclasen@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8-pep518 = "^0.2.0"
+isort = "^5.10.1"
+mypy = "^0.991"
+pytest = "^7.2.0"
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.mypy-pytest]
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
+line_length = 99
+
+[tool.black]
+line-length = 99
+
+[tool.flake8]
+max_line_length = 99

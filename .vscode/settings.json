@@ -1,15 +1,16 @@
 {
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.testing.pytestEnabled": true,
-    "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-    },
-    "python.testing.pytestArgs": [
-      "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "testing.automaticallyOpenPeekView": "never",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.mypyEnabled": true,
+  "python.testing.pytestEnabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+  },
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "testing.automaticallyOpenPeekView": "never",
 }

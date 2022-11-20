@@ -1,12 +1,12 @@
-from banking import BankAccountService
+from uuid import UUID
+
+from banking import MessageBus, ViewModel
+from banking.commands import DepositMoney, WithdrawMoney
 
 
 def test_users_must_be_able_to_save_an_account(
-    service: BankAccountService, service2: BankAccountService
+    bus: MessageBus, view: ViewModel, account_id: UUID
 ) -> None:
-    service.deposit(100)
-    service.withdraw(80)
-    assert service2.get_balance() == 0
-
-    service2.refresh()
-    assert service2.get_balance() == 20
+    bus.handle(DepositMoney(account_id=account_id, amount=100))
+    bus.handle(WithdrawMoney(account_id=account_id, amount=80))
+    assert view.get_balance(account_id) == 20

@@ -6,7 +6,7 @@ class AccountAlreadyDisabled(ValueError):
     pass
 
 
-class AccountDisabled(ValueError):
+class AccountIsDisabled(ValueError):
     pass
 
 

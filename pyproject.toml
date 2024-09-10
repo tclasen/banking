@@ -8,7 +8,7 @@ authors = ["Tory Clasen <toryclasen@gmail.com>"]
 python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.10.0"
+black = "^24.3.0"
 flake8-pep518 = "^0.2.0"
 isort = "^5.10.1"
 mypy = "^0.991"
